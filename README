@@ -1,0 +1,102 @@
+🇮🇳 India General Election Results Analysis - 2024 (Power BI)
+📊 Project Overview
+
+This project presents an interactive Power BI dashboard analyzing the India General Election Results 2024.
+The goal is to transform raw election data into meaningful insights at national, state, and constituency levels.
+
+🎯 Objectives
+Analyze overall election performance of major alliances (NDA, I.N.D.I.A., Others)
+Understand state-wise political dominance
+Provide constituency-level insights including winners and vote share
+Build an interactive and user-friendly dashboard for data exploration
+📌 Key Features
+🔹 Overview Analysis
+Total Seats: 543
+NDA: 292 (54%)
+I.N.D.I.A.: 234 (43%)
+Others: 17 (3%)
+Party-wise performance visualization
+🔹 State Demographics Analysis
+Map visualization showing state-wise dominance
+Drill-down capability for deeper insights
+Comparison of NDA vs I.N.D.I.A. seats
+🔹 Constituency Analysis
+Winning Candidate
+Runner-Up and 2nd Runner-Up
+Total Votes & Vote Share
+Detailed candidate-level insights
+🔹 State Analysis
+State-wise filtering (e.g., Chandigarh)
+Party-wise results
+Seat distribution using donut chart
+🧠 Key Insights
+NDA secured majority with 292 seats (54%)
+I.N.D.I.A. alliance showed strong competition with 234 seats
+Significant variation in political dominance across states
+Some states are heavily dominated by a single alliance
+🛠 Tools & Technologies
+Power BI
+DAX (Data Analysis Expressions)
+Data Modeling
+Excel
+⚙️ Data Modeling
+Multiple tables used:
+constituencywise_results
+constituencywise_details
+partywise_results
+states
+Relationships created using:
+Party ID
+Constituency ID
+State
+🔢 Key DAX Calculations
+✅ Winner Logic
+
+Used MAX and CALCULATE to identify candidates with highest votes.
+
+✅ Runner-Up & 2nd Runner-Up
+
+Used advanced DAX:
+
+MAX
+FILTER
+MAXX
+
+This logic dynamically calculates:
+
+Winner
+Runner-Up
+Second Runner-Up
+✅ Alliance Mapping
+
+Used IF conditions and LOOKUPVALUE to classify parties into:
+
+NDA
+I.N.D.I.A.
+Others
+✅ Seat Share %
+
+Used DIVIDE() function for safe calculations:
+
+NDA %
+I.N.D.I.A. %
+Others %
+
+🎨 Dashboard Features
+Interactive navigation using clickable images
+Drill-down and filtering capabilities
+Clean and modern UI design
+Tooltips for enhanced insights
+
+🚀 Learnings
+Advanced DAX problem-solving
+Real-world data modeling
+Building interactive dashboards
+Converting raw data into actionable insights
+📬 Feedback
+
+I would love to hear your feedback and suggestions!
+
+🔗 Connect with Me : www.linkedin.com/in/sandeep-singh-21a579208
+
+LinkedIn: (Add your LinkedIn profile link here)
